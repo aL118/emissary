@@ -521,7 +521,8 @@ public final class Ssdeep {
             final int s2Pos = indexOfSubSequence(s2, s1, s1Pos, length);
             if (s2Pos != -1) {
                 // if (logger.isDebugEnabled()) {
-                // logger.debug("found common sequence {} in {} at {} and {} at {}", new String(s1, s1Pos, length), new String(s1),
+                // logger.debug("found common sequence {} in {} at {} and {} at {}", new String(s1, s1Pos, length), new
+                // String(s1),
                 // s1Pos, new String(s2), s2Pos);
                 // }
                 return true;

@@ -6,3 +6,4 @@
  * {@link emissary.core.BaseDataObject} as its payload and routes it around to various places.
  */
 package emissary.core;
+

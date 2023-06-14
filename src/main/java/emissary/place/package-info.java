@@ -9,3 +9,4 @@
  * @see emissary.core.IBaseDataObject
  */
 package emissary.place;
+

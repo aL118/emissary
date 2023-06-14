@@ -30,3 +30,4 @@
  * communication with all of the registered observers.
  */
 package emissary.directory;
+

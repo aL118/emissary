@@ -164,7 +164,7 @@ public abstract class BaseCommand implements EmissaryCommand {
      * Try to reinitialize the logback context with the configured file you may have 2 log files if anything logged before
      * we do this. Useful when you are running a server For troubleshooting, looking at the http://localhost:8001/lbConfig
      * when this works, you will see the initial logger and then new one
-     *
+     * 
      * Need to reinit because logback config uses ${emissary.node.name}-${emissary.node.port} which are now set by the
      * commands after logback is initialized
      */

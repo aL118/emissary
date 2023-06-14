@@ -323,7 +323,8 @@ public final class WorkBundle implements Comparable<WorkBundle> {
      * @throws IllegalStateException if adding the units would cause the bundle to contain more than <code>MAX_UNITS</code>
      *         work units
      */
-    protected int addWorkUnits(List<WorkUnit> list) { // This appears to only be used by unit tests and the copy constructor
+    protected int addWorkUnits(List<WorkUnit> list) { // This appears to only be used by unit tests and the copy
+                                                      // constructor
         if (workUnitList.size() + list.size() > MAX_UNITS) {
             throw new IllegalStateException("WorkBundle may not contain more than " + MAX_UNITS + " WorkUnits.");
         }

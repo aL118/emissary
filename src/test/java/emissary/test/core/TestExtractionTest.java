@@ -83,7 +83,8 @@ class TestExtractionTest extends UnitTest {
 
     private Element getAttributeFromDataChild(List<Element> dataList, String matchMode) {
         Element data = null;
-        // Having different matchModes in the same data necessitates having to go through each child and filter for the correct
+        // Having different matchModes in the same data necessitates having to go through each child and filter for the
+        // correct
         // one
         try {
             data = dataList.stream().filter(item -> item.getAttribute("matchMode").getValue().equals(matchMode)).findFirst().get();

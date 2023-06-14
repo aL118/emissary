@@ -50,7 +50,8 @@ public class WorkBundleCompletedAction {
                 || !cleanSpaceName.startsWith("WORKSPACE.WORK_SPACE.INPUT.") || !cleanPlaceName.startsWith("INITIAL.FILE_PICK_UP_CLIENT.INPUT.")) {
             return Response
                     .serverError()
-                    .entity("Bad params: " + CLIENT_NAME + " - " + cleanPlaceName + ", " + SPACE_NAME + " - " + cleanSpaceName + ", " + WORK_BUNDLE_ID
+                    .entity("Bad params: " + CLIENT_NAME + " - " + cleanPlaceName + ", " + SPACE_NAME + " - " + cleanSpaceName + ", "
+                            + WORK_BUNDLE_ID
                             + " - " + cleanBundleId)
                     .build();
         }

@@ -551,10 +551,9 @@ class ConfigUtilTest extends UnitTest {
         ConfigUtil.getMasterClassNames();
 
         // Confirm logs contain flavor message
-        assertTrue(
-                appender.list.stream()
-                        .anyMatch(i -> i.getFormattedMessage()
-                                .contains("appeared to be flavored with NORM")));
+        assertTrue(appender.list.stream()
+                .anyMatch(i -> i.getFormattedMessage()
+                        .contains("appeared to be flavored with NORM")));
 
         System.clearProperty(ConfigUtil.CONFIG_FLAVOR_PROPERTY);
         emissary.config.ConfigUtil.initialize();

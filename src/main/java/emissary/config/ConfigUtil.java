@@ -553,7 +553,8 @@ public class ConfigUtil {
         final List<File> masterClassNames = new ArrayList<>();
         for (final String dir : getConfigDirs()) {
             final File[] files = new File(dir).listFiles((dir1, name) -> name.startsWith(MASTER_FILE_PREFIX) && name.endsWith(CONFIG_FILE_ENDING));
-            // sort the files, to put emissary.admin.MasterClassNames.cfg before emissary.admin.MasterClassNames-blah.cfg
+            // sort the files, to put emissary.admin.MasterClassNames.cfg before
+            // emissary.admin.MasterClassNames-blah.cfg
             if (files != null) {
                 Arrays.sort(files);
                 masterClassNames.addAll(Arrays.asList(files));

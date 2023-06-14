@@ -76,7 +76,8 @@ public class IBaseDataObjectDiffHelper {
         diff(ibdo1.getWorkBundleId(), ibdo2.getWorkBundleId(), "workBundleId", differences);
         diff(ibdo1.getTransactionId(), ibdo2.getTransactionId(), "transactionId", differences);
 
-        // Special case - pass through DiffCheckConfiguration options. This also ensures the right method is called (Object vs
+        // Special case - pass through DiffCheckConfiguration options. This also ensures the right method is called
+        // (Object vs
         // List<IBDO>)
         diff(ibdo1.getExtractedRecords(), ibdo2.getExtractedRecords(), "extractedRecords", differences, options);
     }

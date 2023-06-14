@@ -145,7 +145,8 @@ class InputStreamChannelFactoryTest {
     @Test
     void testReadWithLargerThanDefinedSize() throws IOException {
         final int sbcLength = testBytes.length / 2;
-        // Set an SBC that is smaller than the amount of data we have, ensure that we can't read more than the defined size
+        // Set an SBC that is smaller than the amount of data we have, ensure that we can't read more than the defined
+        // size
         try (final SeekableByteChannel sbc = InputStreamChannelFactory.create(sbcLength, new TestInputStreamFactory(testBytes)).create()) {
             ByteBuffer buff = ByteBuffer.allocate(32);
             assertEquals(sbcLength, sbc.size());

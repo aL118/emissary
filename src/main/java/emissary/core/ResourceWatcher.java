@@ -163,7 +163,8 @@ public class ResourceWatcher implements Runnable {
     }
 
     public void resetStats() {
-        // We use reflection to reset the histograms that track finished events, but leaves the namespace for active timers
+        // We use reflection to reset the histograms that track finished events, but leaves the namespace for active
+        // timers
         for (Timer timer : this.metrics.getTimers().values()) {
             try {
                 Field histogramField = Timer.class.getDeclaredField("histogram");
